@@ -8,6 +8,7 @@
 body{
     margin:0;
     line-height: 1.6;
+    
 }
 
 img{
@@ -23,12 +24,17 @@ p{
     margin:0;
 }
 
+.main{
+    
+}
+
 section{
     padding:7em 0;
 }
 
 .container{
-    width: 85%;
+    padding-top:5em;
+    width: 90%;
     margin: 0 auto;
     max-width: 65em;
 }
@@ -65,9 +71,22 @@ section{
 }
 
 .slideShow{
-    
-    position:relative;
+    position: relative;
     overflow: hidden;
+    height: 100%;
+    padding-top:20em;
+}
+
+
+@media (max-width: 600px) {
+
+.slideShow{
+    padding-top: 37em;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
 }
 
 .slide.current{
@@ -97,8 +116,7 @@ button#prev{
 }
 
 .buttons button {
-
-    border: 2px solid black;
+    border:transparent;
     background-color: transparent;
     color: black;
     cursor: pointer;
@@ -155,3 +173,56 @@ button#prev{
     height: 100%;
 }
 
+.sectionTitle{
+    padding-bottom: 3em;
+}
+
+
+.mysteriesImage{
+    margin:auto;
+}
+
+.mysteriesp{
+    padding-bottom: 5em;
+}
+
+
+
+@media (min-width:600px){
+
+    .split{
+        display: flex;
+        flex-direction: column;
+    }
+    .mysteriesImage{
+        height: 40%;
+        width: 40%;
+        padding-right:5em;
+    }
+    .split{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mysteries {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20em;
+    }
+
+    .mysteries2{
+        display: flex;
+        flex-direction:row-reverse;
+        height: auto;
+        padding-bottom:20em;
+    }
+
+    .mysteriesImage2{
+        height: 40%;
+        width: 40%;
+    }
+    
+
+
+
+}
