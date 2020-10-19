@@ -24,16 +24,9 @@ p{
     margin:0;
 }
 
-.main{
-    
-}
-
-section{
-    padding:7em 0;
-}
 
 .container{
-    padding-top:5em;
+    padding-top:2em;
     width: 90%;
     margin: 0 auto;
     max-width: 65em;
@@ -55,7 +48,7 @@ section{
 .sectionTitle{
 
     text-align: center;
-
+    padding-top: 3em;
 }
 
 .hero{
@@ -125,7 +118,6 @@ button#prev{
 }
 
 .buttons button:hover{
-
     background-color: white;
     color:#333;
 
@@ -173,17 +165,13 @@ button#prev{
     height: 100%;
 }
 
-.sectionTitle{
-    padding-bottom: 3em;
-}
-
 
 .mysteriesImage{
     margin:auto;
 }
 
 .mysteriesp{
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 }
 
 
@@ -222,7 +210,39 @@ button#prev{
         width: 40%;
     }
     
+}
 
+.graph{
+    padding: 2em 0;
 
+}
+
+.sort{
+    display: flex;
+    flex-direction: column;
+}
+
+.yes{
+    display: flex;
+    flex-direction: row;
+}
+
+.winner{
+
+    margin: 0 auto;
+    padding-bottom:1em;
+}
+
+@media (min-width:600px){
+
+    .graph{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .graphText{
+        width: 50%;
+        margin: 0 auto;
+    }
 
 }
